@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<!--<div class="nav">
+    <nav>
+        <i class="fas fa-bars"></i>
+        <ul style="list-style: none;">
+            <li><a href="#">Add Medicine</a></li>
+            <li><a href="#">Update Medicine</a></li>
+            <li><a href="#">Delete Medicine</a></li>
+            <li><a href="#">Close</a></li>
+        </ul>
+    </nav>
+</div>-->
+
+    <div class="med">
+    <center>
+    <fieldset>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+        <!--By using switch statement-->
+      <h1 >Check medicines status</h1>
+    </head>
+    <style>
+    p{
+        font-size: x-large;
+        color:black;
+    }
+    input{
+        border-color: red;
+        margin-top: -30%;
+        padding: 5px;;
+        height: 200%;
+        width: 30%;
+    }
+    fieldset{
+        margin: 100px;
+        background-color: lawngreen;
+        height: 100%;
+        width: 50%;
+    }
+    button{
+           background-color: cornflowerblue;
+           padding: 8px;
+           margin-top: 1px;
+           height: auto;
+           width: 170px;
+           font-size: large;
+           border-radius: 7%;
+           width: 100px;
+    }
+    body{
+        background: url(med4.jpg);
+    }
+    </style>
+    <body>
+        
+      <p>Enter medicine Name(Check medicines status)</p><br>
+      <input type="text" id="a" placeholder="Search...">
+      <br><br>
+       <button onclick="med();">check</button>
+       </fieldset>
+    </center>
+    </div>
+       <script>
+           function med()
+           {
+               var x=document.getElementById("a").value;
+               switch(x)
+               {
+                   case '':
+                         alert("Please enter some text !");
+                         break;
+                   case 'Paracetamol':
+                         alert("Available in rack no. 24");
+                         break;
+                   case 'Calpol 650mg':
+                         alert("Available in rack no. 25");
+                         break;
+                   case 'Benadryl cough syrup':
+                        alert("Available in rack no. 27");
+                        break;
+                    case 'ORS': 
+                        alert("Available in rack no. 28");
+                        break;
+                    case 'Vicks': 
+                        alert("Available in rack no. 29");
+                        break;
+                    case 'COVAXIN':
+                        alert("Available in rack no. 30");
+                        break;
+                    case 'Covidshield':
+                        alert("Available in rack no. 30");
+                        break;
+                    case 'Remdesivir':
+                        alert("Available in rack no. 30");
+                        break;
+                    default:
+                       alert("Medicine not available");                  
+                }
+           }
+       </script>
+                   
+    </body>
+</html>
